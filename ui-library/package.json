@@ -1,0 +1,13 @@
+{
+  "name": "ui-library-workspace",
+  "private": true,
+  "workspaces": [
+    "ui",
+    "nx-project"
+  ],
+  "scripts": {
+    "build:ui": "cd ui && npm run build",
+    "dev:next": "cd nx-project && npm run dev",
+    "setup": "npm install && npm run build:ui && cd nx-project && npm install"
+  }
+} 
